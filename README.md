@@ -34,6 +34,8 @@ Consistency matters.
     - At the beginning, try to use an IDE to get the correct result. Then, rewrite the program on the website to enhance memory. As time goes along, you will get more comfortable with the syntax. 
     - Make a quick summary in each directory's readme. 
     
+### Reference 
+https://github.com/pezy/LeetCode
 
 
 
