@@ -27,7 +27,7 @@ In this repo, there will be problems in these topics (no Hard questions,  )
     
 3. Others 
     - Bit manipulation ((Month 3)
-    
+4. **[See here for a detailed list of questions](questions.csv)**
 ### Usage
 1. [Test framework: Catch 2](https://github.com/catchorg/Catch2) 
 2. List of questions: [some other good questions + solutions](https://github.com/liweiwei1419/LeetCode-Solution-in-Good-Style)
