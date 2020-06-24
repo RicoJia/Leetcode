@@ -1,1 +1,3 @@
-idea*
+.idea*
+list.py
+question_list.csv

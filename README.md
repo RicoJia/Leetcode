@@ -9,26 +9,29 @@ In this repo, there will be problems in these topics (no Hard questions,  )
 1. Data Structures
     - Array (Month 1)
     - Linked List (Month 1)
-    - Graph & Tree (Month 3)
+    - Hash Table (Month 1)  
+    - String (Month 1)
+    - Tree (Month 3)
     - Stack & Queue(Month 3)
     - Heap (Month 3)
-    - Hash Table (Month 1)  
 
 2. Search algorithms (People have been working on these for years. Learn them well!)
     - Search Algorithms (Binary Search, Divide and Conquer) (Month 2)
     - Sort algorithms (Month 2)
     - Graph (shortest path, [minimal spanning tree](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/), (Month 3))
-    - Back-Tracking (Month 2)
-    - BFS, DFS (Month 2)
+    - Backtracking (Month 2)
+    - BFS, DFS (Month 2)    
     - Dynamic Programming (Month 2)
+    - Trie (Month 2)
     - Greedy (Month 3)
     
 3. Others 
-    - Bit manipulation ((Month 23)
+    - Bit manipulation ((Month 3)
     
 ### Usage
-1. Test framework: Catch 2
-https://github.com/catchorg/Catch2
+1. [Test framework: Catch 2](https://github.com/catchorg/Catch2) 
+2. List of questions: [some other good questions + solutions](https://github.com/liweiwei1419/LeetCode-Solution-in-Good-Style)
+Also, check out another set of [Solutions to some good questions and good explanation (Mandarin)](https://github.com/pezy/LeetCode)
 
 
 ### Notes
@@ -39,10 +42,16 @@ Consistency matters.
     - At the beginning, try to use an IDE to get the correct result. Then, rewrite the program on the website to enhance memory. As time goes along, you will get more comfortable with the syntax. 
     - **Make a quick summary in each directory's readme.** 
     - **Keep improving your solution. This is even more important than having a solution!**
+    - Practice easy questions first, but move to medium ASAP: medium questions are more frequent than the easier ones!
+    - Graph, Dynamic Programming, backtracking are not well covered in easy questions. Do medium questions on these topics. 
+    - Doing a couple problems at a time is better than doing them one at a time.  
     
-### Resources 
-1. [Solutions to some good questions and good explanation (Mandarin)](https://github.com/pezy/LeetCode)
-2. [Videos on selected topics](https://www.youtube.com/playlist?list=PLx5pC21u5orQbjA_hpVzES5gcBNFrPsXW)
+### Very useful Resources 
+1. [Leetcode Strategies](https://www.zhihu.com/question/280279208)
+2. [Explanation](https://github.com/MisterBooo/LeetCodeAnimation/blob/master/README-En.md)
+### Additional Useful Resources (watch these if you have time)
+1. [Videos on advanced algorithms](https://www.youtube.com/playlist?list=PLx5pC21u5orQbjA_hpVzES5gcBNFrPsXW)
 
 ### References 
 1. [Priority](https://www.zhihu.com/question/321738058/answer/1279464192) 
+
