@@ -27,3 +27,4 @@ by starting to add chars from the top row; else, start from the bottom row.
     ```cpp
      (n & 0x1 ? ret[nRows-m-1] : ret[m]) += s[i];
     ```
+   4. You can do the "+" operation by using ```std::accumulate```. In this Problem, **you can use this on appending multiple strings, as + can be used for appending.** 
