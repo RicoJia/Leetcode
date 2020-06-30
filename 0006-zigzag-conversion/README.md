@@ -7,15 +7,13 @@ We try to find the pattern for each element in a row.
 3. row m: m, m + (row_num - m -1 ) * 2, m + (row_num - m -1 ) * 2 + (m)* 2 ... 
 
 Therefore, for each row, we calculate the element indices using this formula
-- Several things worth noticing: 
-    1. when 
 
 ### Notes
 1. string.at() can be used for indexing. 
 
 
-### Method 2 - [see here](https://github.com/pezy/LeetCode/blob/master/005.%20ZigZag%20Conversion/solution.h)
-THIS IS CRAZY - ONE PASS SOLUTION. It's surprisingly straightforward - you construct a vector of strings, each string is a row. 
+### Method 2 - THIS IS CRAZY - ONE PASS SOLUTION [see here](https://github.com/pezy/LeetCode/blob/master/005.%20ZigZag%20Conversion/solution.h)
+. It's surprisingly straightforward - you construct a vector of strings, each string is a row. 
 Based on the remainder ```i%(numRows - 1)```, you can add each character by moving up or down. When the ```i/(numRows-1)``` is odd, you should move down, 
 by starting to add chars from the top row; else, start from the bottom row. 
  
