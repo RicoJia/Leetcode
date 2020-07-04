@@ -6,7 +6,7 @@
 
     0080-remove-duplicates-from-sorted-array-ii     - (EXAMPLE OF CHECK&REPLACE USING TWO FORWARD ITERATORS)
 
-    0215-kth-largest-element-in-an-array
+    0215-kth-largest-element-in-an-array (Need Review)
 
     0268-missing-number (NEED REVIEW)
 
@@ -26,15 +26,15 @@
 
     0005-longest-palindromic-substring（马拉车算法）.py (Done)
 
-    0006-zigzag-conversion.py (Done)
+    0006-zigzag-conversion (Done)
 
     0008-string-to-integer-atoi (Done)
 
     0010-regular-expression-matching（动态规划）.py
 
-    0013-roman-to-intege.py
+    0013-roman-to-intege.py (Done)
 
-    0067-add-binary-1.py
+    0067-add-binary-1 (need review)
 
     0088-merge-sorted-array（1、常规做法）.py
 
@@ -149,6 +149,8 @@
     0108-convert-sorted-array-to-binary-search-tree
 
     0515-find-largest-value-in-each-tree-row(bfs)
+
+    0973-K-Closest-Points-to-Origin (KD tree)
 
 --------Trie
 
