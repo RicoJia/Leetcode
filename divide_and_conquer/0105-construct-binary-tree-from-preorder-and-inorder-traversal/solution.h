@@ -18,17 +18,18 @@ struct TreeNode {
 };
 
 class Solution {
+    template <class It>
     TreeNode* buildSubTree(const vector<int>& preorder, const vector<int>& inorder,
-            std::vector<int>::const_iterator pre_order_beg,
-                           std::vector<int>::const_iterator pre_order_end,
-                           std::vector<int>::const_iterator in_order_beg,
-                           std::vector<int>::const_iterator in_order_end){
+            It pre_order_beg,
+                           It pre_order_end,
+                           It in_order_beg,
+                           It in_order_end){
         if (pre_order_beg == pre_order_end) {
             return nullptr;
         }
 
         TreeNode* root = new TreeNode(*pre_order_beg);
-//        cout<<"root: "<<root -> val<<endl;
+        cout<<"root: "<<root -> val<<endl;
 
         if (pre_order_beg + 1 == pre_order_end){
             return root;

@@ -27,4 +27,10 @@ For any subtree, 1. the first node in pre-order is the root. 2, the left subtree
     - divide and conquer can be squeezed into one function if the difference of the two parts can happen only in arguments. 
     - Be careful with the two array's starting and ending conditions. They might be symmetrical 
     - gdb does not work with vector iterators so well. Fix it!  
+        - Well, maybe the iterator you pass in was not the right type? It's actually fine. 
 
+4. Try using template instead of iterator to implement this. 
+    - It is actually incredibly simple. You just do template<class It> ... 
+    We can do this because template functions can be defined only in h file, and we're working in h file. 
+    (for link time template instantiation)
+    

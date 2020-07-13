@@ -40,8 +40,6 @@
 
 --------Binary Search
 
-    0004-median-of-two-sorted-array
-
     0034-find-first-and-last-position-of-element-in-sorted-array
 
     0035-search-insert-position-1
@@ -66,7 +64,7 @@
 
     0053-maximum-subarray（分治算法）(DONE)
 
-    0105-construct-binary-tree-from-preorder-and-inorder-traversal.py
+    0105-construct-binary-tree-from-preorder-and-inorder-traversal (Done)
 
     0153-find-minimum-in-rotated-sorted-array（分治法）.py
 
