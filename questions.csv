@@ -1,4 +1,4 @@
-Completed:  21
+Completed:  22
 --------array
 
     0026-remove-duplicates-from-sorted-array (need review)
@@ -43,7 +43,7 @@ Completed:  21
 
     0034-find-first-and-last-position-of-element-in-sorted-array (Done)
 
-    0035-search-insert-position-1
+    0035-search-insert-position
 
     0035-search-insert-position-2
 
@@ -67,7 +67,7 @@ Completed:  21
 
     0105-construct-binary-tree-from-preorder-and-inorder-traversal (Done)
 
-    0153-find-minimum-in-rotated-sorted-array
+    0153-find-minimum-in-rotated-sorted-array (Done)
 
     0154-find-minimum-in-rotated-sorted-array-ii（分治法）.py
 
