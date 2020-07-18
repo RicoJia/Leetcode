@@ -1,4 +1,4 @@
-Completed:  24
+Completed:  26
 --------array
 
     0026-remove-duplicates-from-sorted-array (need review)
@@ -81,17 +81,19 @@ Completed:  24
 
     0912-sort-an-array（merge sort）.py (Done)
 
-    0912-sort-an-array(quick sort).py
+    0912-sort-an-array(quick sort) (Done)
 
-    0912-sort-an-array（插入排序）.py
+    0912-sort-an-array（插入排序）(Done)
 
-    0912-sort-an-array（计数排序）.py
+    0912-sort-an-array（计数排序）(Not implemented)
 
-    0912-sort-an-array（selection sort）.py
+    0912-sort-an-array（selection sort）(Done)
 
-    0912-sort-an-array（bubble sort）.py
+    0912-sort-an-array（bubble sort）(Done)
 
     0912-sort-an-array（heap sort）(Done)
+
+    *0912-sort-an-array（ intro-sort, the std::sort algorithm )
 
 --------Backtracking
 
