@@ -1,4 +1,4 @@
-Completed:  22
+Completed:  24
 --------array
 
     0026-remove-duplicates-from-sorted-array (need review)
@@ -43,7 +43,7 @@ Completed:  22
 
     0034-find-first-and-last-position-of-element-in-sorted-array (Done)
 
-    0035-search-insert-position
+    0035-search-insert-position (Done)
 
     0035-search-insert-position-2
 
@@ -79,15 +79,19 @@ Completed:  22
 
 --------Sort
 
-    0912-sort-an-array（归并排序）.py
+    0912-sort-an-array（merge sort）.py (Done)
 
-    0912-sort-an-array（快速排序）.py
+    0912-sort-an-array(quick sort).py
 
     0912-sort-an-array（插入排序）.py
 
     0912-sort-an-array（计数排序）.py
 
-    0912-sort-an-array（选择排序）.py
+    0912-sort-an-array（selection sort）.py
+
+    0912-sort-an-array（bubble sort）.py
+
+    0912-sort-an-array（heap sort）(Done)
 
 --------Backtracking
 
