@@ -25,7 +25,6 @@ public:
             if(to_swap_i < to_check_i && nums.at(to_check_i) < nums.at(to_find_index)){
                 swap(nums.at(to_swap_i++), nums.at(to_check_i));
             }
-
         }
 
         if (nums.at(to_swap_i) < nums.at(to_find_index)) ++to_swap_i;   //because you don't know if the first element in this array is larger.
@@ -36,8 +35,7 @@ public:
     //vector to sort is [start, end)
     template<class Comparator>
     void quickSort(vector<int> &nums, const Comparator &compa, const int start, const int end) {
-        if (start + 1 == end || start == end ) return;
-
+        if (start + 1 == end || start == end ) return;  // you need start == end because partition might be start; start + 1 == end because in regular cases, end = start + 1.
         int partition_i = partition(nums, end - 1, start, end);
         quickSort(nums, compa, start, partition_i);
         quickSort(nums, compa, partition_i + 1, end);       // here if partition_i is the last element. for the next iteration you might get start == end;

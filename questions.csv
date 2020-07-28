@@ -1,4 +1,4 @@
-Completed:  26
+Completed:  28
 --------array
 
     0026-remove-duplicates-from-sorted-array (need review)
@@ -93,15 +93,13 @@ Completed:  26
 
     0912-sort-an-array（heap sort）(Done)
 
-    *0912-sort-an-array（ intro-sort, the std::sort algorithm )
+    *0912-sort-an-array（ intro-sort, the std::sort algorithm, Done)
 
 --------Backtracking
 
     0039-combination-sum
 
     0046-permutations
-
-    0051-n-queens
 
     0077-combinations
 
