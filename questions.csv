@@ -69,7 +69,7 @@ Completed:  28
 
     0153-find-minimum-in-rotated-sorted-array (Done)
 
-    0154-find-minimum-in-rotated-sorted-array-ii（分治法）.py
+    0154-find-minimum-in-rotated-sorted-array-ii
 
     0215-kth-largest-element-in-an-array.py
 
@@ -103,13 +103,13 @@ Completed:  28
 
     0077-combinations
 
-    0078-subsets
+    0078-subsets (Done, need follow up)
 
     0200-number-of-islands (Done)
 
 --------BFS
 
-    0207-course-schedule
+    0207-course-schedule (Done)
 
 --------DFS
 
@@ -119,9 +119,9 @@ Completed:  28
 
     0005-longest-palindromic-substring
 
-    0053-maximum-subarray
+    0053-maximum-subarray 
 
-    0063-unique-paths-ii
+    0063-unique-paths-ii (DOne)
 
     0120-triangle
 
