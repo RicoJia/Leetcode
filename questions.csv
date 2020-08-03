@@ -7,8 +7,6 @@ Completed:  28
 
     0080-remove-duplicates-from-sorted-array-ii     - (EXAMPLE OF CHECK&REPLACE USING TWO FORWARD ITERATORS)
 
-    0215-kth-largest-element-in-an-array (Need Review)
-
     0268-missing-number (NEED REVIEW)
 
     0079-Word-Search (NEED REVIEW)
@@ -71,8 +69,6 @@ Completed:  28
 
     0154-find-minimum-in-rotated-sorted-array-ii (Done)
 
-    0215-kth-largest-element-in-an-array.py
-
     0240-search-a-2d-matrix-ii （1、减而治之，起点左下角）.py
 
     1274-number-of-ships-in-a-rectangle.py
@@ -95,13 +91,15 @@ Completed:  28
 
     *0912-sort-an-array（ intro-sort, the std::sort algorithm, Done)
 
+    0215-kth-largest-element-in-an-array (Done)
+
 --------Backtracking
 
     0039-combination-sum
 
     0046-permutations
 
-    0077-combinations
+    0077-combinations (Done)
 
     0078-subsets (Done, need follow up)
 
@@ -167,6 +165,7 @@ Completed:  28
     --------Heap (Month 3)
 
     --------Graph
+    [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
 
     Greedy
 
