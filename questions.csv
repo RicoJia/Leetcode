@@ -143,7 +143,10 @@ Completed:  28
 
     0746-min-cost-climbing-stairs
 
---------Tree
+    --------Graph
+    [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
+
+    --------Tree
 
     0106-construct-binary-tree-from-inorder-and-postorder-traversal
 
@@ -153,7 +156,7 @@ Completed:  28
 
     0973-K-Closest-Points-to-Origin (KD tree)
 
---------Trie
+    --------Trie
 
     LeetCode：208. Implement Trie (Prefix Tree)
 
@@ -166,8 +169,6 @@ Completed:  28
 
     --------Heap (Month 3)
 
-    --------Graph
-    [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
 
     Greedy
 
