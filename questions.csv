@@ -137,14 +137,44 @@ Completed:  28
 
     0304-range-sum-query-2d-immutable (Done)
 
-    0518-coin-change-2
+    0518-coin-change-2 (Great Question, Review with 1D array)
 
-    0714-best-time-to-buy-and-sell-stock-with-transaction-fee
+    0714-best-time-to-buy-and-sell-stock-with-transaction-fee (Done)
 
-    0746-min-cost-climbing-stairs
+    0746-min-cost-climbing-stairs (Done)
+
+    0474-Ones-and-Zeroes (0-1 knapsack problem, Done, great question!)
 
     --------Graph
-    [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
+    I am doing the first half of each topic in these [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
+    Union Find - Identify if problems talks about finding groups or components.
+        https://leetcode.com/problems/friend-circles/
+        https://leetcode.com/problems/redundant-connection/
+        https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
+    DFS - Start DFS from nodes at boundary:
+        https://leetcode.com/problems/surrounded-regions/
+    Shortest time:
+        https://leetcode.com/problems/time-needed-to-inform-all-employees/
+    Islands Variants
+        https://leetcode.com/problems/number-of-closed-islands/
+        https://leetcode.com/problems/number-of-islands/
+        https://leetcode.com/problems/keys-and-rooms/
+    Hash/DFS:
+        https://leetcode.com/problems/employee-importance/
+    Cycle Find:
+        https://leetcode.com/problems/find-eventual-safe-states/
+    BFS for shortest path:
+        https://leetcode.com/problems/01-matrix/
+        https://leetcode.com/problems/as-far-from-land-as-possible/
+    Graph coloring:
+        https://leetcode.com/problems/possible-bipartition/ (Great Question!!)
+    Topological Sort:
+        https://leetcode.com/problems/course-schedule-ii/ (Done)
+    Shortest Path:
+        https://leetcode.com/problems/network-delay-time/
+        https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
+
+
 
     --------Tree
 
