@@ -42,7 +42,8 @@ In the 2D case, you can check left, up, then right, down.
 #### Distance To the Nearest 0  
 [Problem](https://leetcode.com/problems/01-matrix/)
 you can use a queue and keep adding and popping nodes to achieve BFS. The rationale is similar to the [DP solution ](#Distance-To-the-Nearest-0)
-which is: you will get the right result after evaluating by getting the best of multiple passes.  
+which is: you will get the right result after evaluating by getting the best of multiple passes. 
+In 1D case, in each pass you evaluate 1 by starting from the 0 on the left/on the right. This is same as DP, which evaluates from 0 on the left & on the right as well.   
   
 ### Graph 
 
