@@ -1,5 +1,10 @@
 # Sumary
 
+### DFS
+#### number of islands. 
+Just like your Fun Project. 
+
+
 ### Dynamic Programming
 The very definition is to use previous knowledge to compute a current value. So the key is to think how to build your way to each step. 
 A typical problem is the [0-1 knapsack problem](https://www.youtube.com/watch?v=xCbYmUPvc2Q). And it can be easily implemented as a 2D array
@@ -60,6 +65,10 @@ If a problem asks you to classify two types of nodes, and adjacent nodes cannot 
 Use the **FULL edge list**, and **DFS** for this problem. Otherwise, there will be too bugs for you to consider!!
 Corner case: empty edge list. 
 
+#### Cycle Detection
+You can have 2 methods: topological sort, or building 2 edge lists (one with inbound and one with outbound edges). 
+Then, you can start popping edges on one edge list, from all leaf nodes. If there are no edge left at the end, the graph is clear. 
+``
 
 
 ## Useful Tips
