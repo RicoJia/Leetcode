@@ -1,11 +1,11 @@
+#include "solution.h"
 #include <iostream>
+
 using std::cout;
 using std::endl;
-
-#include <vector>
 using std::vector; 
 
-class Solution{
-public:
-
-};
+int main(){
+    Solution s;
+    s.maxXor(2,4,8);
+}

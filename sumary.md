@@ -2,7 +2,8 @@
 
 ### DFS
 #### number of islands. 
-Just like your Fun Project. 
+Just like your Fun Project. Use DFS. Note that in each DFS iteration, you're going to find a complete patch. 
+ 
 
 
 ### Dynamic Programming
@@ -42,6 +43,9 @@ You just need two passes to find the minimum value from one direction: left to r
 Rationale is you get the min from both directions, which is to **improve** based on what you have. 
 
 In the 2D case, you can check left, up, then right, down. 
+
+#### Experiences
+1. [Amazon OA19 Max of Mins](actual_test/Amazon_OA_19_Max_of_Min_Altitutes/README.md)
 
 ### BFS 
 #### Distance To the Nearest 0  
