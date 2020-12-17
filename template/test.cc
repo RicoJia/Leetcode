@@ -1,10 +1,13 @@
 #include "solution.h"
 #include <iostream>
+#include <vector>
+#include <string>
 
-using std::cout;
-using std::endl;
-using std::vector; 
+using namespace std;
 
 int main(){
     Solution s;
+
+    cout<<"ret: "<<ret<<" | expect: "<<expect<<endl;
+
 }

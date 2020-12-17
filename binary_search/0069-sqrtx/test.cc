@@ -18,6 +18,11 @@ int main(){
 //        sol = (int)sqrt(x);
 //        cout<<"ret: "<<ret<<" sol: "<<sol<<endl;
 //    }
+/*    x = 12;
+    ret = s.mySqrt(x);
+    sol = (int)sqrt(x);
+    cout<<"ret: "<<ret<<" sol: "<<sol<<endl;*/
+
 
     x = 2147483647;
     ret = s.mySqrt(x);

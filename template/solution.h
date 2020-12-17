@@ -1,9 +1,13 @@
 #include <iostream>
-using std::cout;
-using std::endl;
 
 #include <vector>
-using std::vector; 
+
+#include <algorithm>
+#include<climits>
+
+#include <unordered_map>
+
+using namespace std;
 
 class Solution{
 public:

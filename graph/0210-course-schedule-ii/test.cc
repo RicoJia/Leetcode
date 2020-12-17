@@ -18,17 +18,20 @@ int main(){
 //    cout<<endl;
 //    //{0:  {1, 2}, 1: {3}, 2: {3}, 3:{}}
 
-//    prerequisites = {{0,1},{1,0}};
-//    numCourses = 2;
-//    ret = s.findOrder(numCourses, prerequisites);   // {0,1,2,3} or {0,2,1,3}
-//    for(int i: ret){cout<<i<<" ";}
-//    cout<<endl;
+    prerequisites = {{0,1}};
+    numCourses = 2;
+    ret = s.findOrder(numCourses, prerequisites);   // {0,1,2,3} or {0,2,1,3}
+    for(int i: ret){cout<<i<<" ";}
+    cout<<endl;
+    cout<<"expect: "<<"1 0"<<endl;
+
 
     prerequisites = {{0,2},{1,2},{2,0}};
     numCourses = 3;
     ret = s.findOrder(numCourses, prerequisites);   // {0,1,2,3} or {0,2,1,3}
     for(int i: ret){cout<<i<<" ";}
     cout<<endl;
+    cout<<"expect: "<<""<<endl;
 //    {0:  {2}, 1: {}, 2: {0,1}}
 
 }

@@ -16,6 +16,11 @@ int main(){
     ret = s.possibleBipartition(N, dislikes);
     cout<<"solution is true, I got: "<<ret<<endl;
 
+    dislikes = {{1,2},{1,3},{2,4}};
+    N = 4;
+    ret = s.possibleBipartition(N, dislikes);
+    cout<<"solution is true, I got: "<<ret<<endl;
+
     dislikes ={{1,2},{3,4},{5,6},{6,7},{8,9},{7,8}};
     N = 10;
     ret = s.possibleBipartition(N, dislikes);

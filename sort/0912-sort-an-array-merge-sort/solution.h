@@ -11,7 +11,7 @@ using std::swap;
 
 class Solution {
 public:
-    // merge 2 vectors: [start1, mid), [mid, end2)
+    // merge 2 sorted vectors: [start1, mid), [mid, end2) O(m)
     // use pointer here as required by the coding guideline
     void merge(vector<int>* nums_ptr, int start1, int mid, int end2){
         vector<int> temp;

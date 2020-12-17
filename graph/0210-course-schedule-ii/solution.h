@@ -10,57 +10,42 @@ using std::reverse;
 
 class Solution {
 private:
-    vector<vector<int>> adjacency_list_;         //you can use this as courses are represented in consecutive numbers.
-    void buildAdjacencyList(const vector<vector<int>>& prerequisites, int numCourses){
-        adjacency_list_ = vector<vector<int>>(numCourses);
-        for(auto const& course_pair: prerequisites){
-            adjacency_list_.at(course_pair.at(1)).emplace_back(course_pair.at(0));
-        }
-    }
-
-    int topologicalSort(int node, vector<int>& ret, vector<int>& node_status) {
-        //if node has no children, put the node in the bucket, and return normal
-        // if node has been visited, just return nortmal
-        // if the node is being visited, just return cycle
-        // check the next node's neightbors -> if any neighbor returns normal, ret = normal. Else, if there are only cycle(s), ret = cycle. . if ret == normal, put this node in ret. Then, return ret.
-
-        if( node_status.at(node) == 0){
-            return 0;
-        }
-        if(node_status.at(node) == -1){
-            return -1;           // return cycle
-        }
-        if (adjacency_list_.at(node).size() == 0) {         //Ordering of this check is important: you might have a visited tail node, but you don't want to add it there!!
-            node_status.at(node) = 0;
-            ret.emplace_back(node);
-            return 0;       //return normal
-        }
-
-        int ret_value = 1;
-        node_status.at(node) = -1;      //I tripped here: forgot to color!
-        for (int next_node: adjacency_list_.at(node)) {
-            ret_value = topologicalSort(next_node, ret,node_status);
-            if(ret_value == -1) break;
-        }
-        node_status.at(node) = 0;   //I tripped here: mark as visited
-        if(ret_value == 0) ret.emplace_back(node);
-        return ret_value;
-    }
-
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        buildAdjacencyList(prerequisites, numCourses);
+        //Topological Sort: 1. build a directed edge-list for (A is a preq for b is A->B )dependency. 2. This sort can be implemented only in a unique way: start from the beginning of the list, trace down each node
+        // and their dependencies one by one using DFS. 3. Once you touch the end of the node, add the node to a stack (LIFO), then backtrack to the beginning. 4. If there are branches, trace down
+//        those branches. 5. Once you're done with a node, you start another one. 6. when you're done with the list, take stuff out of the stack one by one.
+//        BENEFIT OF THIS DESIGN: the later nodes in the edge list will always stop at node that needs "joint dependencies ", marked by some previous nodes. This way, we are sure that this
+//        sequence from the stack can visit all the dependencies first, then the final node!
 
-        vector<int> ret;
-        vector<int> node_status(numCourses, 1); //        VISITING = -1, VISITED = 0, UNVISITED = 1;
-
-        for (int node = 0; node < numCourses; ++node) {
-            topologicalSort(node, ret, node_status);
+        //build an adjacency list, A -> B
+        vector<vector<int>> adjacency_list(numCourses);
+        for (const auto& preq: prerequisites){
+            adjacency_list.at(preq.at(1)).emplace_back(preq.at(0));
+        }
+        vector<int> status_list(numCourses, 0); //-1 visitied, 0 unvisited, 1 being visited
+        vector<int> output; output.reserve(numCourses);
+        //DFS to trace down each node in the adjacency list. Push each node onto a "stack"
+        for (int i = 0; i < numCourses; ++i){
+            // if there's a loop, we return false.
+            if (!dfs(i, status_list, adjacency_list, output)) return {};
         }
 
-        if(ret.size()<numCourses) return{};
+        reverse(output.begin(), output.end());
+        return output;
+    }
 
-        reverse(ret.begin(), ret.end());
-        return ret;
+    bool dfs(int current_i, vector<int>& status_list, const vector<vector<int>>& adjacency_list, vector<int>& output){
+        if (status_list.at(current_i) == -1) return true;
+        if (status_list.at(current_i) == 1) return false;
+        //now the current node has not been explored
+        status_list.at(current_i) = 1;
+        const auto& edges = adjacency_list.at(current_i);
+        for(const int next_i : edges){
+            if(!dfs(next_i, status_list, adjacency_list, output)) return false;
+        }
+        status_list.at(current_i) = -1;
+        output.emplace_back(current_i);
+        return true;
     }
 };

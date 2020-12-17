@@ -93,15 +93,15 @@ Completed:  28
 
     0215-kth-largest-element-in-an-array (Done)
 
---------Backtracking
+--------Backtracking (need practice)
 
     0039-combination-sum
 
-    0046-permutations
+    0046-permutations (Need to find recursive solution)
 
     0077-combinations (Done)
 
-    0078-subsets (Done, need follow up)
+    0078-subsets (Done, Great Question!)
 
     0200-number-of-islands (Done)
 
@@ -117,7 +117,7 @@ Completed:  28
 
     0005-longest-palindromic-substring
 
-    0053-maximum-subarray 
+    0053-maximum-subarray  (Done)
 
     0063-unique-paths-ii (Done)
 
@@ -145,10 +145,10 @@ Completed:  28
 
     0474-Ones-and-Zeroes (0-1 knapsack problem, Done, great question!)
 
-    --------Graph
+    -------- Graph
     I am doing the first half of each topic in these [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
     Union Find - Identify if problems talks about finding groups or components.
-        https://leetcode.com/problems/friend-circles/       (Need to find an alternative)
+        https://leetcode.com/problems/friend-circles/       (Need to find an alternative, D)
         https://leetcode.com/problems/redundant-connection/
         https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
     DFS - Start DFS from nodes at boundary:
@@ -160,7 +160,7 @@ Completed:  28
         https://leetcode.com/problems/number-of-islands/ (Done)
         https://leetcode.com/problems/keys-and-rooms/
     Hash/DFS:
-        https://leetcode.com/problems/employee-importance/
+        https://leetcode.com/problems/employee-importance/ (Done)
     Cycle Find:
         https://leetcode.com/problems/find-eventual-safe-states/ (Done)
     BFS for shortest path:
@@ -171,17 +171,16 @@ Completed:  28
     Topological Sort:
         https://leetcode.com/problems/course-schedule-ii/ (Done)
     Shortest Path:
-        https://leetcode.com/problems/network-delay-time/
+        https://leetcode.com/problems/network-delay-time/ (Done)
         https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
-
 
     --------Tree
 
     0106-construct-binary-tree-from-inorder-and-postorder-traversal
 
-    0108-convert-sorted-array-to-binary-search-tree
+    0109-convert-sorted-list-to-binary-search-treeii (great question!)
 
-    0515-find-largest-value-in-each-tree-row(bfs)
+    0515-find-largest-value-in-each-tree-row (Done, bfs)
 
     0973-K-Closest-Points-to-Origin (KD tree)
 
@@ -202,3 +201,68 @@ Completed:  28
     Greedy
 
     Bit Manipulation
+
+Timeline--------------------------
+
+Leetcode:
+    30 questions = 30 h. 5 days, 6h/day. 6 questions
+      - DFS: 5 questions.
+      - Graph: 5
+      - Tree 3
+      - Sort 4
+      - BackTracking: 2
+      - Binary Search 4
+      - String 3
+
+    Timeline:
+        Wednesday: DFS(2) String (1), Graph (2)
+            0053-maximum-subarray (Done)
+            0122-best-time-to-buy-and-sell-stock-ii (Done, need review)
+            0005-longest-palindromic-substring（马拉车算法）.py (Done)
+            https://leetcode.com/problems/friend-circles/       (Need to find an alternative)
+        https://leetcode.com/problems/time-needed-to-inform-all-employees/
+            1376. Time Needed to Inform All Employees　(Done, better way. )
+
+            Bonus: divide and conquer：　
+            0053-maximum-subarray
+
+        Thursday:
+            Tree (2), String (1), Sort (2)
+
+            0108-convert-sorted-array-to-binary-search-tree (Done)
+            0515-find-largest-value-in-each-tree-row(done)
+            0067-add-binary-1 (need review)
+            0912-sort-an-array（heap sort）(Done)
+            0912-sort-an-array（merge sort）.py (Done)
+
+        Friday:
+            BackTracking(2), Binary Search (1), Graph(2) + divide and conquer
+            0046-permutations (new)
+            0078-subsets (Done, need follow up)
+            0069-sqrtx  (Need Review)
+            https://leetcode.com/problems/01-matrix/ (Great Question!)
+            https://leetcode.com/problems/possible-bipartition/ (Great Question!!)
+
+
+        Saturday
+            DFS (2), Binary Search(1), Tree(1), sort(1)
+            https://leetcode.com/problems/employee-importance/
+            https://leetcode.com/problems/surrounded-regions/
+            0300-longest-increasing-subsequence (needs review, especially the binary search)
+            109. Convert Sorted List to Binary Search Tree
+            0912-sort-an-array(quick sort) (Done)
+
+        Sunday
+            Graph(1) Binary Search(2), sort(1), String(1)
+            https://leetcode.com/problems/network-delay-time/ (Done)
+            0053-maximum-subarray
+            0154-find-minimum-in-rotated-sorted-array-ii (Done)
+            0088-merge-sorted-array（1、常规做法）(need review)
+            https://leetcode.com/problems/course-schedule-ii/ (Done, need review)
+
+        Monday:
+            Hacker Rank.
+
+    For each old question, use the existing tests. For new ones, use gdb.
+        - Brush up on gdb.
+    If you need to nap, go for it

@@ -139,41 +139,40 @@ using std::min;
 using std::max;
 using std::max_element;
 
+const int UNKNOWN_COLOR = 2;
+
 class Solution {
-private:
-    bool color_node_and_neighbors(int* group_id, int i, int parent_id, vector<vector<int>>& edge_list){
-        // determine the current node's group id. since we are doing dfs, we can know what the parent's group_id is.
-        if(group_id[i] == -1){
-            group_id[i] = 1 - parent_id;        //assign it to 0.
-        }
-        // color each neighbor's group
-        for(int disliked_node: edge_list.at(i)){
-            if(group_id[disliked_node] == group_id[i]) {
-                return false;
-            }
-            else if(group_id[disliked_node] != -1) continue;
-            else{
-                group_id[disliked_node] = 1 - group_id[i];      // assign the disliked_node to the other group.
-                if(!color_node_and_neighbors(group_id, disliked_node, group_id[disliked_node], edge_list)) return false;     //DFS
-            }
+
+ private:
+    bool dfs(int i, int color){
+        pallet_.at(i) = color;
+        for (const auto& next: edge_list_.at(i) ){
+            if (pallet_.at(next) == color) return false;
+            if (pallet_.at(next) == UNKNOWN_COLOR && !dfs(next, not color)) return false;
         }
         return true;
     }
-
 public:
-    // the non-graph based solution
+
     bool possibleBipartition(int N, vector <vector<int>> &dislikes) {
-        vector<vector<int>> edge_list(N+1);     //first element is dummy
-        for(auto const& dislike: dislikes){
-            edge_list.at(dislike[0]).emplace_back(dislike[1]);
-            edge_list.at(dislike[1]).emplace_back(dislike[0]);
+        // bi-partition. So you Build a connected graph (2d edge list), a pallet to keep track of each neighbor. Note that a loop can be a valid solution as well.
+        //Then, traverse down the each cell of edge list using DFS, color them on the pallet, then their neibors
+        // return false when the cell color contradict with the current color. This is because if there's a loop and we still have a valid solution, the color should never contradict.
+        pallet_ = vector<int> (N, UNKNOWN_COLOR);
+        edge_list_ = vector<vector<int>> (N);
+        for (int i = 0; i < dislikes.size(); ++i){
+            auto vec = dislikes.at(i);
+            edge_list_.at(vec.at(0) - 1).push_back(vec.at(1) - 1);
+            edge_list_.at(vec.at(1) - 1).push_back(vec.at(0) - 1);
         }
 
-        int group_id[N + 1];
-        memset(group_id, -1, sizeof(group_id));        //default is -1, so if there are no conflicts, these people are okay with either group
-        for (int i = 1; i <= N; ++i ) {
-            if(!color_node_and_neighbors(group_id, i, 0, edge_list)) return false;
+        // now let's color
+        int color = 1;
+        for (int i = 0; i < N; ++i){
+            if (pallet_.at(i)==UNKNOWN_COLOR && !dfs(i, color)) return false;   // 1 for red, 0 for blue
         }
         return true;
     }
+    vector<vector<int>> edge_list_;
+    vector<int> pallet_; //three colors: 0,1,2(unoccupied)
 };

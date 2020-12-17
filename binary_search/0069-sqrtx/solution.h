@@ -7,27 +7,21 @@ using std::endl;
 #include <climits>
 
 class Solution {
+    int binarySearch(int l, int r) {
+        if (r - l <= 1)
+            return l;
+        int mid = l + (r - l) / 2;
+        int quo = x_ / mid;
+        if (mid > quo) return binarySearch(l, mid);
+        else if (mid < quo) return binarySearch(mid, r);
+        else return mid;
+    }
 public:
-    int getMiddle(int x, int upper, int lower){
-        if(lower * lower == x || lower + 1 == upper) return lower;
-        else{
-            int middle = (upper + lower) / 2;
-            while (INT_MAX/middle < middle) --middle;  //for the extreme case where 49152 * 49152 cannot be represented in type 'int'
-            // upper bound should never be the real answer.
-            if(middle == lower)     //for an extreame large x where middle is initially > INT_MAX/middle.
-                return lower;
-            cout<<"middle: "<<middle<<"INT_MAX/middle: "<<INT_MAX/middle <<" upper: "<<upper<<endl;
-             if (middle * middle <= x)
-                return getMiddle(x, upper, middle);
-             else
-                 return getMiddle(x, middle, lower);
-        }
-    }
+    // Naive solution: use binary search: if r - l <= 0, return l.
     int mySqrt(int x) {
-        if (x == 1|| x == 0) return x;
-        int n = 0;
-        while(x>>(++n)!=0){}
-        return getMiddle(x, 1<<(1+(n-1)/2), 1<<((n-1)/2));
+        x_ = x;
+        return binarySearch(0, x);
     }
+    int x_;
 };
 
