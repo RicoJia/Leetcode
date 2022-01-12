@@ -1,7 +1,7 @@
 Completed:  28
 --------array
 
-    0026-remove-duplicates-from-sorted-array (need review)
+    0026-remove-duplicates-from-sorted-array (need review, 1)
 
     0075-sort-colors (2 methods done)
 
@@ -19,11 +19,11 @@ Completed:  28
 
 --------Hash Table
 
-    0001-two-sum (done)
+    0001-two-sum (done, 1)
 
 --------String
 
-    0005-longest-palindromic-substring（马拉车算法）.py (Done)
+    0005-longest-palindromic-substring（马拉车算法）.py (Done, 1)
 
     0006-zigzag-conversion (Done)
 
@@ -39,9 +39,9 @@ Completed:  28
 
 --------Binary Search
 
-    0034-find-first-and-last-position-of-element-in-sorted-array (Done)
+    0034-find-first-and-last-position-of-element-in-sorted-array (Done, 1)
 
-    0035-search-insert-position (Done)
+    0035-search-insert-position (Done, 1)
 
     0035-search-insert-position-2
 
@@ -59,13 +59,13 @@ Completed:  28
 
 --------Divide and Conquer
 
-    0050-powx-n (NEED REVIEW)
+    0050-powx-n (NEED REVIEW, 1)
 
-    0053-maximum-subarray（分治算法）(DONE)
+    0053-maximum-subarray（分治算法）(DONE, 1)
 
     0105-construct-binary-tree-from-preorder-and-inorder-traversal (Done)
 
-    0153-find-minimum-in-rotated-sorted-array (Done)
+    0153-find-minimum-in-rotated-sorted-array (Done, 1)
 
     0154-find-minimum-in-rotated-sorted-array-ii (Done)
 
@@ -95,7 +95,7 @@ Completed:  28
 
 --------Backtracking (need practice)
 
-    0039-combination-sum
+    0039-combination-sum (1)
 
     0046-permutations (Need to find recursive solution)
 
@@ -107,21 +107,19 @@ Completed:  28
 
 --------BFS
 
-    0207-course-schedule (Done)
+    0207-course-schedule (Done, 1)
+        - Need Review 
+        - DFS method
 
---------DFS
-
-    TODO
-
---------Dynamic Programming
+-------- Dynamic Programming
 
     0005-longest-palindromic-substring
 
-    0053-maximum-subarray  (Done)
+    0053-maximum-subarray (Done)
 
     0063-unique-paths-ii (Done)
 
-    0120-triangle (Done)
+    0120-triangle (Done, 1)
 
     0121-best-time-to-buy-and-sell-stock (Done)
 
@@ -174,7 +172,7 @@ Completed:  28
         https://leetcode.com/problems/network-delay-time/ (Done)
         https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
 
-    --------Tree
+    --------Tree21367383
 
     0106-construct-binary-tree-from-inorder-and-postorder-traversal
 

@@ -5,21 +5,39 @@ using std::vector;
 using std::copy;
 using std::back_inserter;
 
-/*METHOD 1
+/* 2022-01-07
  * class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int count_arr[] = {0,0,0};
-        for(int i: nums){
-            ++count_arr[i];
-        }
-        nums.clear();
-        for (int i = 0; i < 3; ++i){
-            vector<int> temp(count_arr[i], i);
-            copy(temp.begin(),temp.end(), back_inserter(nums));
+        for(int i = 1; i < nums.size(); ++i){
+            for (int j = i; j >= 1; --j){
+               if (nums.at(j) < nums.at(j-1)){
+                   std::swap(nums.at(j), nums.at(j-1));
+               }
+            }
         }
     }
-};*/
+};
+ */
+
+/* 2022-01-07
+ * class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        vector<int> counts(3, 0);
+        for (const auto& num: nums){
+            ++counts[num];
+        }
+
+        nums.clear();
+        for (int i = 0; i<counts.size(); ++i){
+            vector<int> temp (counts[i], i);
+            nums.insert(nums.end(), temp.begin(), temp.end());
+        }
+    }
+};
+*/
+
 
 #include <iostream>
 using std::cout;

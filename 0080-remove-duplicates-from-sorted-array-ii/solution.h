@@ -5,11 +5,16 @@ using std::endl;
 #include <vector>
 using std::vector;
 
-/*class Solution {
+// Lessons learned: 
+//  - remove needs to work with end, then use the new end: 
+//      end = std::remove(beg, end, val); // Not vec.end()
+//  - vector::erase() also exists
+//  - Bidirectional itrs: you can do itr+2. 
+//  - std::distance(beg, end)
+
+class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        if (nums.empty()) return 0;
-        int curr_num = nums.at(0);
         for (int i = 0; i < (int)nums.size() - 2; ++i){
             if(nums.at(i) == nums.at(i+2)) {
                 nums.erase(nums.begin()+i+2);
@@ -18,24 +23,21 @@ public:
         }
         return nums.size();
     }
-};*/
+};
 
-#include <algorithm>
-using std::remove;
 
+// 2022-01-11
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        if (nums.empty()) return 0;
-        int curr_num = nums.at(0);
-        auto nums_end = nums.end(); auto nums_itr = nums.begin();
-        while(nums_itr + 2 < nums_end){
-            if(*nums_itr == *(nums_itr+2)) {
-                nums_end = remove(nums_itr+2, nums_end, *nums_itr);
-                nums_itr+=2;
+        auto end = nums.end();
+        for(auto itr = nums.begin(); itr+2 < end;){
+            if (*itr == *(itr+2)){
+                end = std::remove(itr+2, end, *itr);
+                itr += 2;
             }
-            else ++nums_itr;
+            else itr += 1;
         }
-        return nums_end - nums.begin();
+        return std::distance(nums.begin(), end);
     }
 };

@@ -7,6 +7,53 @@ using std::vector;
 
 #include <climits>
 
+// 2022-01-06 - DP, error: signed integer overflow, 31/55 passed
+class Solution {
+public:
+   
+    void preprocess(vector<vector<int>>& g){
+        for (auto& row: g)
+            for (auto& cell: row){
+                if (cell == 1)
+                    cell = -1; 
+            }
+        g[g.size()-1][g[0].size()-1] = 1;
+    }
+    
+    int neighbor_val(int r, int c, vector<vector<int>>& obstacleGrid){
+        int R = obstacleGrid.size(); 
+        int C = obstacleGrid[0].size(); 
+        if (r == R || c == C || obstacleGrid[r][c] == -1) return 0; 
+        else return obstacleGrid[r][c]; 
+    }
+    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
+        // Obstacle Check
+        int R = obstacleGrid.size(); 
+        int C = obstacleGrid[0].size(); 
+        if (obstacleGrid[R-1][C-1] == 1 || obstacleGrid[0][0] == 1) return 0; 
+
+        preprocess(obstacleGrid); 
+        
+        for (int r = R-1; r >= 0; --r){
+            for(int c = C-1; c >= 0; --c){
+                if (r == R-1 && c == C-1)
+                    continue; 
+                if (obstacleGrid[r][c] == -1)
+                    continue; 
+                obstacleGrid[r][c] = neighbor_val(r+1, c, obstacleGrid) + neighbor_val(r, c+1, obstacleGrid);
+            }
+        }
+        
+        for (auto r: obstacleGrid){
+            for(auto c: r)
+                cout<<c<<" ";
+            cout<<endl;  
+        }
+        
+        return obstacleGrid[0][0]; 
+    }
+};
+
 class Solution {
 public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {

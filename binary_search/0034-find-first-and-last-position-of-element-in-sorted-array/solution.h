@@ -10,6 +10,16 @@ using std::vector;
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
+        // Method 1
+        // auto first_element = std::find(nums.begin(), nums.end(), target);
+        // if (first_element == nums.end()) return {-1, -1};
+        // int first_i = first_element - nums.begin();
+        // std::reverse(nums.begin(), nums.end());
+        // auto last_element = std::find(nums.begin(), nums.end(), target);
+        // int last_i = nums.size() - (last_element - nums.begin()) -1;
+        // return {first_i, last_i};
+        
+        // Method 2
         if(nums.size()==0) return{-1, -1};
 
         int l_bound = 0, r_bound = nums.size()-1;
@@ -70,3 +80,53 @@ public:
     }
 };
 
+// METHOD 3 - for loop instead of recursion
+// class Solution {
+// public:
+//
+//     vector<int> searchRange(vector<int>& nums, int target) {
+//         int head_i = 0; int tail_i = nums.size()-1;
+//         int one_target_i = -1;
+//
+//         // corner case: [5, 7], 6, med = 0.
+//         while (head_i < tail_i){
+//             int med = (head_i + tail_i)/2;
+//             //TODO
+//             cout<<med<<endl;
+//
+//             if (nums.at(med) == target){
+//                 one_target_i = med;
+//                 break;
+//             }
+//             else if (nums.at(med) < target){
+//                 head_i = med;
+//             }
+//             else{
+//                 tail_i = med;
+//             }
+//
+//             if (head_i + 1 == tail_i){
+//                 if (nums.at(tail_i) == target)
+//                     one_target_i = tail_i;
+//                 else if (nums.at(head_i) == target)
+//                     one_target_i = head_i;
+//                 break;
+//             }
+//         }
+//
+//
+//         if (head_i == tail_i){
+//             if (nums.at(head_i) == target){
+//                 one_target_i = head_i;
+//             }
+//         }
+//
+//         if (one_target_i == -1) return {-1, -1};
+//
+//         // get head
+//         for (; (head_i != one_target_i) && (nums.at(head_i) < target); head_i++){}
+//         for (; (tail_i != one_target_i) && (nums.at(tail_i) > target); tail_i--){}
+//         return {head_i, tail_i};
+//
+//     }
+// };

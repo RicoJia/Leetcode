@@ -8,6 +8,59 @@ using std::vector;
 #include <algorithm>
 using std::reverse;
 
+// // 2022-01-09
+// // class Solution {
+// public:
+//     bool has_loop(std::unordered_map<int,vector<int>>graph, int start_key, unordered_set <int> visited){
+//         if (visited.find(start_key) != visited.end()) return true;
+//         visited.insert(start_key);
+//         for (const int& item: graph[start_key]){
+//             if (has_loop(graph, item, visited))
+//                 return true;
+//         }
+//         return false;
+//     }
+//
+//     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+//         // build graph
+//         std::vector<vector<int>> depended(numCourses);
+//         vector<int> depends(numCourses, 0);
+//         for(const auto& j: prerequisites){
+//             depended.at(j[1]).emplace_back(j[0]);
+//             ++depends.at(j[0]);
+//         }
+//
+//         int cnt = 0;
+//         std::stack<int> s{};
+//
+//         for (int i = 0; i < depends.size(); ++i){
+//             if (depends[i] == 0){
+//                 s.push(i);    // tricky
+//             }
+//         }
+//
+//         // for(auto i: depended) cout<<i<<endl;
+//         // for(auto i: depends) cout<<i<<endl;
+//
+//
+//         while(!s.empty()){
+//             int i = s.top();
+//             s.pop();
+//             cnt++;
+//             for(const auto& child: depended.at(i)){
+//                 --depends.at(child);
+//                 if(depends.at(child) == 0){
+//                     s.push(child);
+//                 }
+//             }
+//         }
+//
+//         if(cnt == numCourses)
+//             return true;
+//         else return false;
+//     }
+// };
+
 class Solution {
 private:
 public:

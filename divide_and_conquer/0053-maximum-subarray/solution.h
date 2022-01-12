@@ -12,6 +12,25 @@ using std::vector;
 using std::max;
 using std::max_element;
 
+// Best Method 1
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+
+        // sum, smallest negative / sum from there if positive. 
+        int max_sum = INT_MIN; 
+        int i=0; 
+        for(int j = 0; j < nums.size(); ++j){
+            i = i + nums[j]; //sum
+            if (max_sum < i){
+                max_sum = i;
+            }
+            if (i<0) i = 0; 
+        }
+        return max_sum;
+    }
+};
+
 // Method 2
 //class Solution {
 //public:
