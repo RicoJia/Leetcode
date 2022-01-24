@@ -75,9 +75,9 @@ Completed:  28
 
 --------Sort
 
-    0912-sort-an-array（merge sort）.py (Done)
+    0912-sort-an-array（merge sort）.py (Done, 1)
 
-    0912-sort-an-array(quick sort) (Done)
+    0912-sort-an-array(quick sort) (Done, 1)
 
     0912-sort-an-array（插入排序）(Done)
 
@@ -115,15 +115,15 @@ Completed:  28
 
     0005-longest-palindromic-substring
 
-    0053-maximum-subarray (Done)
+    0053-maximum-subarray (Done, 1)
 
-    0063-unique-paths-ii (Done)
+    0063-unique-paths-ii (Done, 1)
 
     0120-triangle (Done, 1)
 
-    0121-best-time-to-buy-and-sell-stock (Done)
+    0121-best-time-to-buy-and-sell-stock (Done, 1)
 
-    0122-best-time-to-buy-and-sell-stock-ii (Done, need review)
+    0122-best-time-to-buy-and-sell-stock-ii (Done, need review, 1)
 
     0123-best-time-to-buy-and-sell-stock-iii (Done, need review)
 
@@ -146,7 +146,7 @@ Completed:  28
     -------- Graph
     I am doing the first half of each topic in these [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
     Union Find - Identify if problems talks about finding groups or components.
-        https://leetcode.com/problems/friend-circles/       (Need to find an alternative, D)
+        https://leetcode.com/problems/friend-circles/       (Need to find an alternative, D, 1)
         https://leetcode.com/problems/redundant-connection/
         https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
     DFS - Start DFS from nodes at boundary:
@@ -165,7 +165,7 @@ Completed:  28
         https://leetcode.com/problems/01-matrix/ (Great Question!)
         https://leetcode.com/problems/as-far-from-land-as-possible/
     Graph coloring:
-        https://leetcode.com/problems/possible-bipartition/ (Great Question!!)
+        https://leetcode.com/problems/possible-bipartition/ (Great Question!!, 1)
     Topological Sort:
         https://leetcode.com/problems/course-schedule-ii/ (Done)
     Shortest Path:
@@ -190,12 +190,11 @@ Completed:  28
 
     LeetCode：212. Word Search II
 
-    TODO
     --------Stack & Queue(Month 3)
 
     --------Heap (Month 3)
 
-
-    Greedy
-
-    Bit Manipulation
+    --------Misc
+    1175-prime_arrangements
+    146. LRU Cache
+    152 Maximum Product Subarray
