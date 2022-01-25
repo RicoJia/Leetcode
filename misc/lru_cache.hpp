@@ -1,3 +1,8 @@
+// Better Method 
+// you need to remove the stack position of a key. 
+// So make the stack storing values, then the map stores a list of iters to the keys. 
+
+// Method 1
 class LRUCache {
 public:
     LRUCache(int capacity): cap_(capacity) {

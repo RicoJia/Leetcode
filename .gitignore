@@ -3,3 +3,4 @@ list.py
 question_list.csv
 *.gch
 test
+*.out
