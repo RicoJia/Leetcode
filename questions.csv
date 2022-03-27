@@ -17,6 +17,10 @@ Completed:  28
     0021-merge-two-sorted-list (Done)
 
     0142-linked-list-cycle-ii (Done)
+    
+    reverse-linked-list-ii (1)
+    
+    160. Intersection of Two Linked Lists (Done). [Nice Solution](https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len)
 
 --------Hash Table
 
@@ -33,6 +37,8 @@ Completed:  28
     0010-regular-expression-matching（动态规划）.py
 
     0013-roman-to-intege.py (Done)
+
+    integer-to-roman (1)
 
     0067-add-binary-1 (need review)
 
@@ -68,7 +74,7 @@ Completed:  28
 
     0153-find-minimum-in-rotated-sorted-array (Done, 1)
 
-    0154-find-minimum-in-rotated-sorted-array-ii (Done)
+    0154-find-minimum-in-rotated-sorted-array-ii (Done, 1(bfs))
 
     0240-search-a-2d-matrix-ii （1、减而治之，起点左下角）.py
 
@@ -143,6 +149,8 @@ Completed:  28
     0746-min-cost-climbing-stairs (Done)
 
     0474-Ones-and-Zeroes (0-1 knapsack problem, Done, great question!)
+
+    https://leetcode.com/problems/generate-parentheses/solution/ (great question!)
 
     -------- Graph
     I am doing the first half of each topic in these [problems](https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734)
