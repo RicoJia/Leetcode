@@ -64,8 +64,8 @@ public:
         if(nums.at(end) < target ) return end + 1;
         while(start + 1 != end){
             int mid = (start + end)/2;
-            if(nums.at(mid) == target) return  mid;
-            else if (nums.at(mid)  < target) start = mid;
+            if(nums.at(mid) == target) return mid;
+            else if (nums.at(mid) < target) start = mid;
             else end = mid;
         }
         return (nums.at(start) < target)? end:start;
